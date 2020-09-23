@@ -53,6 +53,7 @@ g3<- plot(use$datetime, use$Sub_metering_1, type="n", xlab="", ylab="Energy sub 
 points(y=use$Sub_metering_1, x=use$datetime, col="black", type="l", cex=1)
 points(y=use$Sub_metering_2, x=use$datetime, col="red", type="l", cex=1)
 points(y=use$Sub_metering_3, x=use$datetime, col="blue", type="l", cex=1)
+legend("topright", legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), col=c("black","red", "blue"), lty=1 , bty="n", cex=0.5)
 g4<- plot(use$datetime, use$Voltage, type="l", xlab="datetime", ylab="Voltage")
 g5<- plot(use$datetime, use$Global_reactive_power, type="l", xlab="datetime", ylab="Global_reactive_power")
 dev.copy(png, file="plot4.png")
